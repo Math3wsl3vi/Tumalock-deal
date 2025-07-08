@@ -41,9 +41,7 @@ export default function RootLayout({
         <Navbar/>
         <Toaster/>
         {children}
-        <div className="fixed bottom-0 w-full mt-20">
             <Footer/>
-      </div>
       </body>
     </html>
   );
