@@ -1,8 +1,25 @@
+import About from '@/components/home/About'
+import Hero from '@/components/home/Hero'
+import Services from '@/components/home/Services'
+import Testimonial from '@/components/home/Testimonial'
+import Transaction from '@/components/home/Transaction'
+import React from 'react'
 
-export default function Home() {
+const HomePage = () => {
   return (
-   <div>
-    <h1 className="text-xl">hello world!</h1>
-   </div>
-  );
+    <div>
+        {/* hero */}
+        <Hero/>
+        {/* about */}
+        <About/>
+        {/* services */}
+        <Services/>
+        {/* transaction */}
+        <Transaction/>
+        {/* testimonial */}
+        <Testimonial/>
+    </div>
+  )
 }
+
+export default HomePage
