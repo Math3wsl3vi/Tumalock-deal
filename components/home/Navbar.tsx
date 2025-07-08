@@ -56,7 +56,9 @@ const Navbar = () => {
 
         {/* CTA Buttons (Desktop) */}
         <div className="hidden md:flex gap-4 items-center">
-          <Button variant="outline">Contact</Button>
+          <Button 
+          onClick={()=>router.push('/contact')}
+          variant="outline">Contact</Button>
           <Button 
           onClick={()=>router.push('/auth')}
           className="text-white bg-gradient-to-r from-pink-500 to-blue-500 hover:opacity-90 transition">Register</Button>

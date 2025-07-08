@@ -178,7 +178,9 @@ const AuthPage = () => {
         <Separator className="my-8 max-w-md" />
 
         <div className="text-center text-sm text-gray-600">
-          <p className="cursor-pointer">By continuing, you agree to our <span className="underline hover:text-blue-600">Terms of Service</span></p>
+          <p 
+          onClick={()=>router.push('/dashboard')}
+          className="cursor-pointer">By continuing, you agree to our <span className="underline hover:text-blue-600">Terms of Service</span></p>
           <p className="cursor-pointer">and acknowledge our <span className="underline hover:text-blue-600">Privacy Policy</span></p>
         </div>
       </div>
