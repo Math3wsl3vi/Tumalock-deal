@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"], // Add the font weights you need
+  weight: ["300", "400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -38,7 +38,9 @@ export default function RootLayout({
       >
         <div>
         </div>
-        <Navbar/>
+        <div className="pt-[60px]">
+          <Navbar/>
+        </div>
         <Toaster/>
         {children}
             <Footer/>
