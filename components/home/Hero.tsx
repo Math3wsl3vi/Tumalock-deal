@@ -46,7 +46,7 @@ const Hero = () => {
                 {[1, 2, 3, 4].map((item) => (
                   <Image
                     key={item}
-                    src={`/avatars/avatar-${item}.jpg`}
+                    src={`/images/user.png`}
                     alt="Happy customer"
                     width={40}
                     height={40}
@@ -70,10 +70,10 @@ const Hero = () => {
                 className="rounded-xl object-cover shadow-xl"
                 priority
               />
-              <div className="absolute -bottom-6 -right-6 hidden rounded-xl bg-white p-4 shadow-lg lg:block">
+              <div className="absolute -bottom-6 -right-2 hidden rounded-xl bg-white p-4 shadow-lg lg:block">
                 <div className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full bg-green-500"></div>
-                  <span className="font-medium">24/7 Active Protection</span>
+                  <span className="font-medium">24/7 Service</span>
                 </div>
               </div>
             </div>
