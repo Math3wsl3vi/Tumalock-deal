@@ -2,7 +2,6 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Star } from "lucide-react";
 
 import React from 'react'
 
@@ -35,19 +34,7 @@ const Testimonial = () => {
                 </div>
               </CardHeader>
               <CardContent className="pt-0">
-                <div className="mb-4 flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className={`h-5 w-5 ${
-                        i < testimonial.rating
-                          ? "fill-yellow-400 text-yellow-400"
-                          : "text-gray-300"
-                      }`}
-                    />
-                  ))}
-                </div>
-                <p className="text-gray-700">&apos;{testimonial.quote}&apos;</p>
+                <p className="text-gray-700">{testimonial.quote}</p>
               </CardContent>
             </Card>
           ))}
@@ -63,21 +50,18 @@ const testimonials = [
   {
     name: "Josephine Wangare.",
     avatar: "/avatars/sarah.jpg",
-    rating: 5,
     quote:
       "Tumalock deal is God sent. I love the way their website is designed. It is easy to follow and enjoyable transacting through their secure platform. Now days I buy everything online.I don't do business with any seller who does not accept to be paid through turnalock deal. I have always been making my purchases from jiji, cheki and other online sites. I highly recommend it to anyone who want to do serious online business.",
   },
   {
     name: "Goeffrey Lagat",
     avatar: "/avatars/james.jpg",
-    rating: 5,
     quote:
       "Tumalock helped me did secure purchase of items online. I recently bought a laptop through it. I send the money to turnalock together with the sellers' mpesa number. The seller received a message from turnalock and sent me the laptop through a Nissan to kericho. I received my laptop in good condition and unlocked the money which had initially been locked. The money was then released to the seller immediately.",
   },
   {
     name: "Omosh Sam.",
     avatar: "/avatars/grace.jpg",
-    rating: 4,
     quote:
       "I have an online store where I sell mobile phones. I do refer my customers to use turnalock deal. They really like it and this has led to an increase in my online sales as well as profits. Since I knew turnalock, I haven't closed a day without selling anything. My customers are distributed countrywide and I just send them items through buses or matutus after I have received messages from turnalock. I love this company.",
   },
