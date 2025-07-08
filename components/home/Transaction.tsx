@@ -26,7 +26,7 @@ const steps = [
 
 const Transaction = () => {
   return (
-     <section className="bg-[#083344] text-white py-20 px-6 md:px-44 font-poppins">
+     <section className="bg-[#083344] text-white py-20 px-6 md:px-52 font-poppins">
       <div className="text-center mb-16">
         <p className="text-pink-500 uppercase tracking-widest font-medium">Getting Started</p>
         <h2 className="text-3xl md:text-4xl font-bold mt-2">Transaction Process:</h2>
