@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="px-4 md:px-32 py-4 flex items-center justify-between relative font-poppins">
       {/* Logo */}
       <div className="flex items-center">
-        <Image src="/images/logo.png" alt="logo" width={40} height={40} />
+        <Image src="/images/newestlogo.png" alt="logo" width={40} height={40} />
       </div>
 
       {/* Hamburger Button (Mobile Only) */}

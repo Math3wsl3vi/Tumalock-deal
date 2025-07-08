@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo Column */}
           <div className=''>
-            <Image src='/images/logo.png' alt='logo' width={300} height={300} className='w-1/2'/>
+            <Image src='/images/newestlogo.png' alt='logo' width={300} height={300} className='w-1/2'/>
           </div>
 
           {/* Solutions Column */}
