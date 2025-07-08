@@ -178,8 +178,8 @@ const AuthPage = () => {
         <Separator className="my-8 max-w-md" />
 
         <div className="text-center text-sm text-gray-600">
-          <p>By continuing, you agree to our Terms of Service</p>
-          <p>and acknowledge our Privacy Policy</p>
+          <p className="cursor-pointer">By continuing, you agree to our <span className="underline hover:text-blue-600">Terms of Service</span></p>
+          <p className="cursor-pointer">and acknowledge our <span className="underline hover:text-blue-600">Privacy Policy</span></p>
         </div>
       </div>
     </div>

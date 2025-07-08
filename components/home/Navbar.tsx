@@ -4,11 +4,13 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { Button } from '../ui/button';
 import { Menu, X } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const router = useRouter();
 
   // Scroll handler
   useEffect(() => {
@@ -55,7 +57,9 @@ const Navbar = () => {
         {/* CTA Buttons (Desktop) */}
         <div className="hidden md:flex gap-4 items-center">
           <Button variant="outline">Contact</Button>
-          <Button className="text-white bg-gradient-to-r from-pink-500 to-blue-500 hover:opacity-90 transition">Register</Button>
+          <Button 
+          onClick={()=>router.push('/auth')}
+          className="text-white bg-gradient-to-r from-pink-500 to-blue-500 hover:opacity-90 transition">Register</Button>
         </div>
       </div>
 
